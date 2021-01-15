@@ -1,11 +1,28 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import './NavItem.css';
 
-export const NavItem = ({name}) => {
+export const NavItem = ({name,link,Icon,active}) => {
     return (
-        <div>
-            {/* <a href="./{{name}}"><h2>{name}</h2></a> */}
-            <Link to={'/'+name}>{name}</Link>
+        <div >
+            <Link style={linkStyle} to={'/'+link}>
+                <div className={`NavLinks ${active && "NavLinks--active"}`}>
+                    {Icon}
+                    {name}
+                </div>
+            </Link>
+            
         </div>
+        
     )
 }
+
+const linkStyle = {
+    textDecoration:"none",
+    color:"#000",
+    fontSize:"20px",
+    "&:hover":{
+        backgroundColor:"#e8f5fe",
+        color:"Blue"
+    }
+};

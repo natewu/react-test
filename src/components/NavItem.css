@@ -1,0 +1,45 @@
+.NavLinks {
+    align-items: center;
+    text-align: center;
+    cursor:pointer;
+    padding:1vm;
+    display: flex;
+    margin-right: 30px;
+}
+.NavLinks:hover{
+    background-color: #e8f5fe;
+    color:var(--color);
+    border-radius: 30px;
+    transition: color 100ms ease-out;
+}
+.NavLinks > .MuiSvgIcon-root{
+    padding:20px
+}
+.NavLinks > a {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.NavLinks--active{
+    color:var(--color);
+}
+.nav{
+    border-right: 1px solid gray;
+    flex: 0.3;
+    min-width: 250px;
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+}
+.nav__post{
+    background-color: var(--color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    height: 50px !important;
+}

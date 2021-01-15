@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-top: 0;
+  --color:#00acee;
 }
 
 code {
@@ -14,4 +15,5 @@ code {
 
 *{
   margin-top: 0;
+  text-decoration: none !important;
 }

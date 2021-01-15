@@ -13,14 +13,16 @@ class App extends Component{
     return(
       <Router>
         <div className="App">
-          <div className="container">
-            <Nav className="App-header"/>
-            <Route exact path="/" render={props=>(
-              <React.Fragment>
-                <Content/>
-              </React.Fragment>
-            )}/>
-            <Route path="/about" component={About}/>
+          <div className="container" style={{display:"flex", height:"100vmin"}}>
+            <Nav/>
+            <div>
+              <Route exact path="/" render={props=>(
+                <React.Fragment>
+                  <Content/>
+                </React.Fragment>
+              )}/>
+              <Route path="/about" component={About}/>
+            </div>
           </div>
         </div>
       </Router>
