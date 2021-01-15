@@ -6,8 +6,6 @@ import Nav from './components/Nav';
 import Content from './components/Content';
 import About from './pages/About';
 
-
-
 class App extends Component{
   render(){
     return(

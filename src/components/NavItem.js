@@ -11,7 +11,6 @@ export const NavItem = ({name,link,Icon,active}) => {
                     {name}
                 </div>
             </Link>
-            
         </div>
         
     )

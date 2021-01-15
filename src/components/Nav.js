@@ -17,12 +17,14 @@ const navLinks = [
         "icon":<InfoIcon/>
     },
     {
-        "name":"another button lol",
-        "icon":<InfoIcon/>
+        "name":"Button",
+        "icon":<InfoIcon/>,
+        "link":"",
     },
     {
-        "name":"another button lol",
-        "icon":<InfoIcon/>
+        "name":"Button",
+        "icon":<InfoIcon/>,
+        "link":"",
     }
 ]
 
