@@ -4,7 +4,7 @@ import './NavItem.css';
 
 export const NavItem = ({name,link,Icon,active}) => {
     return (
-        <div >
+        <div>
             <Link style={linkStyle} to={'/'+link}>
                 <div className={`NavLinks ${active && "NavLinks--active"}`}>
                     {Icon}

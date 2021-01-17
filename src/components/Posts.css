@@ -2,6 +2,7 @@
     padding: 10px;
     margin: 10px;
     align-items: center;
+    border: 1px solid black;
 }
 p{
     margin-left: 10px;

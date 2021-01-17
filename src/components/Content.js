@@ -8,9 +8,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 export class Content extends Component {
     state = {
-        posts: [
-            
-        ]
+        posts: []
     }
 
     // const [posts, setPosts] = useState([]);
@@ -21,7 +19,7 @@ export class Content extends Component {
             text: text
         }
         this.setState({posts: [...this.state.posts, newPost]});
-        console.log(text);
+        console.log(newPost.id);
     }
     render(){
         return (
