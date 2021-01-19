@@ -31,12 +31,12 @@ const navLinks = [
 class Nav extends Component{
     render(){
         return (
-            <div className="nav"> 
+            <header className="nav"> 
                 {navLinks.map(links=>(
                 <NavItem style={[linkStyles]} name={links.name} link={links.link} Icon={links.icon} key={links.name}/>
                 ))}
                 <Button variant="outlined" className={["NavLinks", "nav__post"]}>Post</Button>
-            </div>  
+            </header>  
         )
     }
 }

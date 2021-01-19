@@ -3,8 +3,7 @@ import {v4 as uuidv4} from 'uuid';
 import Posts from "./Posts";
 import Post from "./Post";
 import TwitterIcon from '@material-ui/icons/Twitter';
-
-    
+import "./Content.css";
 
 export class Content extends Component {
     state = {
@@ -23,8 +22,10 @@ export class Content extends Component {
     }
     render(){
         return (
-            <div>
-                <h2>Home</h2>
+            <div className="content">
+                <div className="content__header">
+                    <h2>Home</h2>
+                </div>
                 <TwitterIcon/>
                 <Post post={this.post}/>
                 {this.state.posts.map(posts =>(

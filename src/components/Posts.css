@@ -3,9 +3,21 @@
     margin: 10px;
     align-items: center;
     border: 1px solid black;
+    background-color: gray;
 }
 p{
     margin-left: 10px;
     text-align: center;
     align-items: center;
+}
+.btn{
+    background-color: var(--color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    height: 50px !important;
 }

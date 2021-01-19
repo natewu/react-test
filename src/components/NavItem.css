@@ -25,9 +25,10 @@
 .NavLinks--active{
     color:var(--color);
 }
+
+/* nav */
 .nav{
-    border-right: 1px solid gray;
-    /* flex: 0.3; */
+    border-right: 1px solid #e6ecf0;
     min-width: 250px;
     margin-top: 20px;
     padding: 0 20px 0 20px;

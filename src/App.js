@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
 import Content from './components/Content';
+import Widgets from './components/Widgets';
 import About from './pages/About';
 
 class App extends Component{
@@ -11,9 +12,9 @@ class App extends Component{
     return(
       <Router>
         <div className="App">
-          <div className="container" style={{display:"flex", height:"100vmin"}}>
+          <div className="container">
             <Nav/>
-            <div>
+            <div className="main">
               <Route exact path="/" render={props=>(
                 <React.Fragment>
                   <Content/>
@@ -21,6 +22,7 @@ class App extends Component{
               )}/>
               <Route path="/about" component={About}/>
             </div>
+            <Widgets/>
           </div>
         </div>
       </Router>

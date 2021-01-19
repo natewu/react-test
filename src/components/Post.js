@@ -16,11 +16,16 @@ export class Post extends Component {
     }
     render() {
         return (
-            <form onSubmit={this.onSubmit} style={{display:"flex"}}>
-                <input type="text" name="username" value={this.state.username} onChange={this.setUsername}/>
-                <input type="text" name="text" style={{flex:"10", padding:"15px"}} value={this.state.text} onChange={this.onChange}/>
+            <div>
+                <div id="modal">
+                    <h1>Please input a username and a message.</h1>
+                </div>
+                <form onSubmit={this.onSubmit} style={{display:"flex"}}>
+                <input id="username" placeholder="Username" type="text" name="username" value={this.state.username} onChange={this.setUsername}/>
+                <input placeholder="What's happening?" type="text" name="text" style={{flex:"10", padding:"15px"}} value={this.state.text} onChange={this.onChange}/>
                 <input type="submit" value="Submit" className="btn" style={{flex:"1"}}/>
-            </form>
+                </form>
+            </div>
         )
     }
 }
